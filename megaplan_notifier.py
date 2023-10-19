@@ -163,7 +163,7 @@ def check_task(mega_api: MegaplanApi):
     while True:
         megaplan_tasks = mega_api.get_query_v3(query_task_url, payload=task_filter)
         for i in range(len(megaplan_tasks)):
-            print(megaplan_tasks[i])
+            # print(megaplan_tasks[i])
             server_task_id = megaplan_tasks[i]['id']
             # print(server_task_id)
             if server_task_id not in db_tasks:
